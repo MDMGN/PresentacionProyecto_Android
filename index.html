@@ -3,36 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="style.css">
     <title>Touch Kill - Zombie</title>
 </head>
 <body>
     <main>
-        <h1>Touch Kill - Zombie</h1>
-        <p>
-            Los juegos han logrado ser una manera de entretenimiento muy habitual y muy consumida en dispositivos móviles y donde Android es el sistema operativo para móviles más usados del mundo.
-            Por los conocimientos que he adquirido en Programación multimedia he decicido desarrollar el siguiente proyecto.
-        </p>
+         <!-- Message Thank You! start-->
+        <div class="wrapper pointer-events-none"></div>
+        <div class="flex_wrapper pointer-events-none"></div>
+      <!-- Message Thank You! end-->
+        <div class="top-btn"><i class="fas fa-arrow-up"></i></div>
         <section>
-            <h2>Descripción del proyecto</h2>
+            <h1>Touch Kill - Zombie (Darren Vargas - SEIM)</h1>
             <p>
-                El proyecto consiste en el desarrollo de una app para Android llamada <b>"Touch kill - Zombie"</b> es un juego dónde te enfocas en obtener el mayor puntaje en un tiempo determinado. 
-                Haciendo uso de la pantalla táctil vas matando a los zombies que aparecerán en la pantalla del dispositivo aleatoriamente . Pero cuidado, que hay que tener cierta concentración y no matar a las personas que parecen en pantalla o  perderás los puntos obtenidos y el nivel del juego. Siendo un modelo de juego de tipo Arcade y buscando el entretenimiento del usuario que usará la app donde también podrá comparar los puntajes obtenidos por otros usuarios que están registrados. Y podrá editar su foto de perfil y datos si así lo desea.
+                Los juegos han logrado ser una manera de entretenimiento muy habitual y muy consumida en dispositivos móviles y donde Android es el sistema operativo para móviles más usados del mundo.
+                Por los conocimientos que he adquirido en Programación multimedia he decicido desarrollar el siguiente proyecto.
             </p>
-            <h2>Icono de la aplicación</h2>
-            <div class="images-container">
-                <img src="./images/android-icon-tkz.png" alt="" class="img-border img">
-                <img src="./images/android-settings-tkz.png" alt="" class="img-border img-small">
-            </div>
-            <article>
-                <h2>UI Desing de la aplicación</h2>
-                <p><b>Pantalla de bienvenida</b>  usada como bienvenida a la aplicación y la primera interacción con el usuario.
-                </p>
-                <div class="images-container">
-                    <img src="./images/splash-tkz.png" class="img-border img" alt="">
-                </div>
-            </article>
         </section>
+    <div>
+            <section>
+                <h2>Descripción del proyecto</h2>
+                <p>
+                    El proyecto consiste en el desarrollo de una app para Android llamada <b>"Touch kill - Zombie"</b> es un juego dónde te enfocas en obtener el mayor puntaje en un tiempo determinado. 
+                    Haciendo uso de la pantalla táctil vas matando a los zombies que aparecerán en la pantalla del dispositivo aleatoriamente . Pero cuidado, que hay que tener cierta concentración y no matar a las personas que parecen en pantalla o  perderás los puntos obtenidos y el nivel del juego. Siendo un modelo de juego de tipo Arcade y buscando el entretenimiento del usuario que usará la app donde también podrá comparar los puntajes obtenidos por otros usuarios que están registrados. Y podrá editar su foto de perfil y datos si así lo desea.
+                </p>
+                <h2>Icono de la aplicación</h2>
+                <div class="images-container">
+                    <img src="./images/android-icon-tkz.png" alt="" class="img-border img">
+                    <img src="./images/android-settings-tkz.png" alt="" class="img-border img-small">
+                </div>
+            </section>
+            <section>
+                <h2><i>UI Desing</i> de la aplicación</h2>
+                <article>
+                    <p><b>Pantalla de bienvenida</b>  usada como bienvenida a la aplicación y la primera interacción con el usuario.
+                    </p>
+                    <div class="images-container">
+                        <img loading="lazy" src="./images/splash-tkz.png" class="img-border img" alt="">
+                    </div>
+                </article>
+                <article>
+                    <p><b>Pantalla de inicio</b>  aquí se muestra el nombre del juego y dos botones Iniciar sesión y Regístrate.
+    
+                    </p>
+                    <div class="images-container">
+                        <img loading="lazy" src="./images/welcome-screen.png" class="img-border img" alt="">
+                    </div>
+                </article>
+                <article>
+                    <p><b>Pantalla de registro</b>  aquí el usuario hace el registro hacia la base de datos FireBase para poder acceder al menú del juego. Los campos están validados para no introducir datos erróneos hacia la base de datos. El usuario deberá hacer click para cambiar la imagen de perfil, introducir un nombre de jugador,  país, correo electrónico y una contraseña que estará encriptada con un hash (MD5)
+    
+                    </p>
+                    <div class="images-container">
+                        <img loading="lazy" src="./images/register-screen.png" class="img-border img" alt="">
+                    </div>
+                </article>
+                <article>
+                    <p><b>Pantalla de inicio de sesión</b>  aquí el usuario inicia sesión en la aplicación con el correo electrónico y contraseña registradas en la base de datos anteriormente y si los datos coinciden cierra la <b>Actividad</b> y redirige al menú del juego.
+                    </p>
+                    <div class="images-container">
+                        <img loading="lazy" src="./images/login-screen.png" class="img-border img" alt="">
+                    </div>
+                </article>
+                <article>
+                    <p><b>Pantalla del menú</b>  aquí el usuario visualiza la información como jugador dentro de la aplicación como nombre del jugador, su puntuación,  y si no ha elegido una foto de perfil aparecerán imágenes aleatorias de zombies que aparecerán en el juego. 
+    
+                    </p>
+                    <div class="images-container">
+                        <img loading="lazy" src="./images/menu-screen.png" class="img-border img" alt="">
+                    </div>
+                </article>
+            </section>
+            <section id="description-game">
+                <article>
+                        <h2>Descripción del Juego</h2>
+                        <h3>Consta de 4 botones:</h3>
+                        <p class="modal-start"><b>Jugar:</b> Comienza el juego.</p>
+                        <p class="modal-scores"><b>Puntuaciones: </b>Si el usuario está conectado a internet les dará una lista de todos los usuarios registrados dentro de la aplicación con las puntuaciones hechas.</p>
+                        <p class="modal-about"><b>Acerca de: </b>Información del desarrollador.</p>
+                        <p class="modal-closed-session"><b>Cerrar sesión:</b> Cierra la Activity Menú para volver a la pantalla de inicio donde podrá hacer un nuevo registro o volver a iniciar sesión.</p>
+                    </article>
+            </section>
+        </div>
+        <script src="./main.js"></script>
     </main>
 </body>
 </html>
