@@ -215,6 +215,7 @@ section,article{
   flex-wrap: wrap;
   align-items: center;
   opacity: 0;
+  margin-bottom: 150px;
 }
 
 .plane_wrapper {
